@@ -8,6 +8,17 @@ Prepared by **Uday**, Klentec Digital Solutions.
 
 ---
 
+## Live staging server
+
+**Base URL:** `https://employee-management-api-uupi.onrender.com/api`  
+Health: https://employee-management-api-uupi.onrender.com/api/health
+
+- Hosted on Render (free plan, Singapore) with MongoDB Atlas (`employee_management_staging`).
+- Import `postman/Employee-Management-API.LIVE.postman_collection.json` to test it. The admin login is `qa-admin@klentec.com`, and the OTP is `123456`.
+- The free plan sleeps after about 15 minutes idle, so the first request then takes about a minute.
+- **Dummy data only.** Anyone with the URL can log in with the development OTP.
+- Every push to `main` redeploys automatically.
+
 ## Contents
 
 1. [Quick start](#quick-start)
